@@ -32,7 +32,7 @@ function showCard(name, country, temp, condition) {
 form.onsubmit = function (event) {
     event.preventDefault()
     let city = input.value.trim();
-    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
     fetch(url).then((response) => {
         return response.json();
     }).then((data) => {
