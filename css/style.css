@@ -1,0 +1,129 @@
+@import "./reset.css";
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,700);
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    row-gap: 50px;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    padding: 40px 15px 50px;
+    background: linear-gradient(92.7deg, #4CB8C4 0%, #3CD3AD 100%), #232323;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 52px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.form {
+    height: 54px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    width: 560px;
+
+}
+
+.input {
+    flex-grow: 1;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1;
+    padding: 15px 15px 15px;
+}
+
+.btn {
+    font-weight: 500;
+    color: white;
+    width: 145px;
+    height: 54px;
+    background: #e6464f;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 1;
+    transition: background-color 0.2s ease-in;
+}
+
+.btn:hover {
+    background: #e91a24;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 30px;
+    position: relative;
+    width: 360px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+}
+
+.card::before {
+    width: calc(100%-20px);
+    position: absolute;
+    left: 10px;
+    bottom: -10px;
+    z-index: -1;
+    height: 100%;
+    content: "";
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+}
+
+.card-city {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.card-city span {
+    display: inline-block;
+    padding: 3px 5px;
+    background: #E5464F;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1;
+    vertical-align: text-top;
+}
+
+.card-weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-value {
+    font-size: 92px;
+    line-height: 1;
+    color: #000000;
+}
+
+.card-value sup {
+    font-size: 50%;
+}
+
+
+.card-description {
+    font-size: 20px;
+    line-height: 1.2;
+}
